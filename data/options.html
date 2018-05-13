@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="utf8" />
+	<link rel="stylesheet" href="css/options.css" type="text/css" media="screen" />
+</head>
+<body>
+	<div>
+		<span>Действия при дубле</span>
+		<div class="radio"><input type="radio" name="conflict" value="overwrite" /><label data-on="Заменить"></label></div>
+		<div class="radio"><input type="radio" name="conflict" value="uniquify" /><label data-on="Переименовать"></label></div>
+		<div class="radio"><input type="radio" name="conflict" value="prompt" /><label data-on="Спросить"></label></div>
+	</div>
+	<div>
+		<span>Комбинация клавиш</span>
+		<div data-name="area" data-text="Ctrl+Left Click"></div>
+	</div>
+	<div>
+		<span>Дополнительные опции</span>
+		<div class="checkbox"><input type="checkbox" name="file" /><label data-on="Сохранять файлы" data-off="Не сохранять файлы"></label></div>
+		<div class="checkbox"><input type="checkbox" name="list" /><label data-on="Сохранять ссылки" data-off="Не сохранять ссылки"></label></div>
+	</div>
+	<textarea placeholder="Список сохраненных ссылок"></textarea>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>

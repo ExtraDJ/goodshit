@@ -1,0 +1,32 @@
+{
+	"manifest_version": 2,
+	"name": "Good Shit",
+	"short_name": "Good Shit",
+	"description": "Some Good Shit. Please make logo for this",
+	"author": "ExtraDJ",
+	"version": "0.2.0",
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"storage",
+		"downloads",
+		"http://*/*", 
+		"https://*/*"
+	],
+	"background": {
+		"persistent": true,
+		"page": "data/background.html"
+	},
+	"browser_action": {
+		"default_popup": "data/options.html"
+	},
+	"content_scripts": [{
+		"run_at": "document_end",
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["data/js/jquery.js", "data/js/content.js"]
+	}],
+	"web_accessible_resources": [
+		"data/js/content.js",
+		"data/css/options.css"
+	]
+}
